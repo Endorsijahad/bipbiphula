@@ -29,7 +29,7 @@ public class MainRESTController {
     @Autowired
     private EmployeeDAO employeeDAO;
  
-    @RequestMapping("/emp")
+    @RequestMapping("")
     @ResponseBody
     public String welcome() {
         return "Welcome to RestTemplate Example.";
