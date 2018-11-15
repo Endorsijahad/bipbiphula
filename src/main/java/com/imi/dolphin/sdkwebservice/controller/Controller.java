@@ -138,7 +138,7 @@ public class Controller {
 	}
         @RequestMapping("/cuaca/{kota}")
         @PostMapping
-        public ExtensionResult doGetCuaca(@PathVariable("kota") String kota ,@RequestBody ExtensionRequest extensionRequest){
+        public ExtensionResult doGetCuaca(@PathVariable String kota ,@RequestBody ExtensionRequest extensionRequest){
             return svcService.doGetCuaca(kota, extensionRequest);
         }
 }
